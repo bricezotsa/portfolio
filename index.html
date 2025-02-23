@@ -131,11 +131,20 @@ a:link {
         text-decoration: none;
    
     }
+.sticky-header {
+    position: -webkit-sticky; /* Pour les navigateurs WebKit */
+    position: sticky;
+    top: 0;
+    background-color: white; /* Couleur de fond de l'en-tête */
+    z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus des autres éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel: Ajoutez une ombre pour l'esthétique */
+}
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mon Portfolio</h1>
+  <header class="sticky-header">
+    <h1>My Portfolio</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -196,12 +205,22 @@ a:link {
     <div class="publications">
       <p><b>1.</b> Hélène Guérin and <b>Arsene-Brice Zotsa-Ngoufack</b>: "Stochastic epidemic model with memory of previous infection and waning immunity", <b> work in progress</b>, 2024.</p>
     </div>
+<h3>Master thesis</h3>
+    <div class="publications">
+      <p><b>[1]</b> Espace de Bergman à exposant variable,2019.[<a href="https://d1wqtxts1xzle7.cloudfront.net/60882415/">Manuscript</a>]</p>
+    </div>
   </section>
 
   <section id="teaching">
     <h2>Teaching experience</h2>
     <div class="teaching">
       <h4>2023-2024, Teaching Assistant, Aix-Marseille Université, Faculty of Economics.</h4>
+      <ul>
+        <li> Mathematics for Microeconomics (Bachelor).</li>
+      </ul>
+    </div>
+    <div class="teaching">
+      <h4>2023-2024, Lecturer, Aix-Marseille Université, Faculty of Economics.</h4>
       <ul>
         <li>Financial Mathematics (Master): Pricing, Arbitrary theory, Stochastic Calculus. <a href="./exercise/Controle-MathFI.pdf">cc.</a></li>
         <li> Mathematics for Microeconomics (Bachelor).</li>
@@ -215,13 +234,13 @@ a:link {
       </ul>
     </div>
     <div class="teaching">
-      <h4>2021-2022, Teaching Assistant, Aix-Marseille Université, Department of mathematics.</h4>
+      <h4>2021-2022, Lecturer, Aix-Marseille Université, Department of mathematics.</h4>
       <ul>
         <li>Mathematical language course L1en2ans portail René Descartes, classe inversée (flipped classroom). <a href="./exercise/langage_math.pdf">cc</a>.</li> 
       </ul>
     </div>
     <div class="teaching">
-      <h4>2018-2019, Teaching, Institut international d'Afrique centrale(IIAC).</h4>
+      <h4>2018-2019, Lecturer, Institut international d'Afrique centrale(IIAC).</h4>
       <ul>
         <li>Introduction to Matlab.</li>
         <li>Numerical methods of ODE and application to Matlab.</li>
